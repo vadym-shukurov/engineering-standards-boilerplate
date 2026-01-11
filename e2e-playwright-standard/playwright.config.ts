@@ -9,7 +9,6 @@
  */
 
 import { defineConfig, devices } from '@playwright/test';
-import path from 'path';
 
 // =============================================================================
 // ENVIRONMENT CONFIGURATION
@@ -56,12 +55,6 @@ export default defineConfig({
   // Output Directories
   // ---------------------------------------------------------------------------
   outputDir: 'test-results',
-
-  // ---------------------------------------------------------------------------
-  // Global Setup/Teardown
-  // ---------------------------------------------------------------------------
-  globalSetup: path.join(__dirname, 'global-setup.ts'),
-  globalTeardown: path.join(__dirname, 'global-teardown.ts'),
 
   // ---------------------------------------------------------------------------
   // Shared Settings for All Projects

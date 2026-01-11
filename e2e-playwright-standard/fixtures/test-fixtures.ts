@@ -14,10 +14,9 @@
  * @since 1.0.0
  */
 
-import { test as base, expect } from '@playwright/test';
+import { test as base, expect, Page, Locator } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
-import { HomePage } from '../pages/HomePage';
-import { DashboardPage } from '../pages/DashboardPage';
+import { BasePage } from '../pages/BasePage';
 
 // =============================================================================
 // TEST DATA TYPES
@@ -207,13 +206,8 @@ export const test = base.extend<CustomFixtures, WorkerFixtures>({
 export { expect };
 
 // =============================================================================
-// PLACEHOLDER PAGE OBJECTS (Would be separate files in real project)
+// PAGE OBJECTS (Defined here for single-file completeness)
 // =============================================================================
-
-// These would normally be in separate files, included here for completeness
-
-import { Page, Locator } from '@playwright/test';
-import { BasePage } from '../pages/BasePage';
 
 export class HomePage extends BasePage {
   readonly url = '/';

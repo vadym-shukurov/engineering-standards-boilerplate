@@ -6,7 +6,7 @@
 
 > **"Code is read more often than it is written."**
 >
-> This repository contains battle-tested boilerplate code demonstrating enterprise engineering standards for building scalable, maintainable, and testable systems.
+> Battle-tested boilerplate demonstrating enterprise engineering standards for building scalable, maintainable, and testable systems.
 
 ---
 
@@ -14,30 +14,41 @@
 
 ```
 engineering-standards-boilerplate/
-├── java-backend-standard/
-│   ├── TransferService.java       # Enterprise service layer
-│   ├── TransferServiceTest.java   # Comprehensive test suite
-│   └── README.md                  # Pattern documentation
+├── java-backend-standard/           # Java/Spring Boot patterns
+│   ├── TransferService.java         # Enterprise service layer
+│   ├── TransferServiceTest.java     # Comprehensive unit tests
+│   └── README.md
+├── typescript-api-standard/         # TypeScript/Node.js patterns
+│   ├── ApiClient.ts                 # Type-safe HTTP client
+│   ├── ApiClient.test.ts            # Unit test suite
+│   └── README.md
+├── e2e-playwright-standard/         # E2E testing patterns
+│   ├── playwright.config.ts         # Multi-browser configuration
+│   ├── pages/                       # Page Object Model
+│   ├── fixtures/                    # Custom test fixtures
+│   ├── tests/                       # Test specifications
+│   └── README.md
 └── README.md
 ```
 
 ## Standards Demonstrated
 
-| Standard | Implementation |
-|:---|:---|
-| **100% Testability** | Constructor injection, no static dependencies |
-| **SOLID Principles** | Single responsibility, dependency inversion |
-| **Transaction Safety** | SERIALIZABLE isolation for financial operations |
-| **Observability** | Metrics, structured logging, domain events |
-| **Resilience** | Retry patterns with exponential backoff |
-| **Security** | PII masking in logs, input validation |
+| Category | Standard | Implementation |
+|:---|:---|:---|
+| **Testability** | 100% Mockable | Constructor injection, no static dependencies |
+| **Architecture** | SOLID Principles | Single responsibility, dependency inversion |
+| **Reliability** | Transaction Safety | SERIALIZABLE isolation for critical operations |
+| **Observability** | Full Visibility | Metrics, structured logging, domain events |
+| **Resilience** | Fault Tolerance | Retry with exponential backoff, circuit breakers |
+| **Security** | Defense in Depth | PII masking, input validation, secure defaults |
 
 ## Quick Start
 
-Browse the `java-backend-standard/` folder for:
-
-1. **TransferService.java** — A production-ready service implementation
-2. **TransferServiceTest.java** — Unit tests achieving 85%+ coverage
+| Module | Language | Focus |
+|:---|:---|:---|
+| `java-backend-standard/` | Java 21+ / Spring Boot | Service layer patterns |
+| `typescript-api-standard/` | TypeScript / Node.js | API client patterns |
+| `e2e-playwright-standard/` | TypeScript / Playwright | E2E testing patterns |
 
 ## Related Frameworks
 

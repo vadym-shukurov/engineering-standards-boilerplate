@@ -289,19 +289,6 @@ function calculateBackoff(attempt: number, baseDelay: number): number {
   return Math.min(exponentialDelay + jitter, 30000); // Cap at 30 seconds
 }
 
-/**
- * Determines if an error is retryable based on status code.
- */
-function isRetryableStatus(status: number): boolean {
-  return (
-    status === 408 || // Request Timeout
-    status === 429 || // Too Many Requests
-    status === 502 || // Bad Gateway
-    status === 503 || // Service Unavailable
-    status === 504    // Gateway Timeout
-  );
-}
-
 // =============================================================================
 // DEFAULT LOGGER
 // =============================================================================
