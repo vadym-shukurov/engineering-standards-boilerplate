@@ -15,7 +15,7 @@
  * @since 1.0.0
  */
 
-import { LoginPage, loginPage } from '../../pages/LoginPage';
+import { loginPage } from '../../pages/LoginPage';
 import { testUsers, viewports } from '../../support/e2e';
 
 describe('Authentication - Login Flow', () => {
