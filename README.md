@@ -22,11 +22,17 @@ engineering-standards-boilerplate/
 │   ├── ApiClient.ts                 # Type-safe HTTP client
 │   ├── ApiClient.test.ts            # Unit test suite
 │   └── README.md
-├── e2e-playwright-standard/         # E2E testing patterns
+├── e2e-playwright-standard/         # Playwright E2E patterns
 │   ├── playwright.config.ts         # Multi-browser configuration
 │   ├── pages/                       # Page Object Model
 │   ├── fixtures/                    # Custom test fixtures
 │   ├── tests/                       # Test specifications
+│   └── README.md
+├── e2e-cypress-standard/            # Cypress E2E patterns
+│   ├── cypress.config.ts            # Cypress configuration
+│   ├── cypress/pages/               # Page Object Model
+│   ├── cypress/support/             # Custom commands & hooks
+│   ├── cypress/e2e/                 # Test specifications
 │   └── README.md
 └── README.md
 ```
@@ -48,7 +54,8 @@ engineering-standards-boilerplate/
 |:---|:---|:---|
 | `java-backend-standard/` | Java 21+ / Spring Boot | Service layer patterns |
 | `typescript-api-standard/` | TypeScript / Node.js | API client patterns |
-| `e2e-playwright-standard/` | TypeScript / Playwright | E2E testing patterns |
+| `e2e-playwright-standard/` | TypeScript / Playwright | E2E testing (Playwright) |
+| `e2e-cypress-standard/` | TypeScript / Cypress | E2E testing (Cypress) |
 
 ## Related Frameworks
 

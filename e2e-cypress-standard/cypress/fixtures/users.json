@@ -1,0 +1,22 @@
+{
+  "validUser": {
+    "email": "test@example.com",
+    "password": "TestPassword123!",
+    "name": "Test User"
+  },
+  "adminUser": {
+    "email": "admin@example.com",
+    "password": "AdminPassword123!",
+    "name": "Admin User"
+  },
+  "invalidCredentials": {
+    "email": "invalid@example.com",
+    "password": "wrongpassword"
+  },
+  "malformedEmails": [
+    "notanemail",
+    "@nodomain.com",
+    "spaces in@email.com",
+    "missing@.com"
+  ]
+}
